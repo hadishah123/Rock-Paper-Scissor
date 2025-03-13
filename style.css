@@ -4,7 +4,19 @@ body {
   margin: 0;
   padding: 0;
 }
-
+#bg-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    transition: 1s opacity;
+    opacity: .5;
+}
 h1 {
   font-size: 2rem;
   text-align: center;
