@@ -1,10 +1,17 @@
 body {
   background-color: #f1f1f1;
   font-family: "Arial", sans-serif;
-  margin-top: 10rem;
+  margin: 0; /* Remove the top margin */
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  text-align: center; /* Center text */
+  position: relative; /* So the video stays in the background */
 }
-#bg-video{
+
+#bg-video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -12,27 +19,27 @@ body {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100;
+    z-index: -100; /* Keeps the video behind the content */
     background-size: cover;
     transition: 1s opacity;
-    opacity: .5;
+    opacity: 0.5; /* Dim the video a little bit for readability */
 }
+
 h1 {
   font-size: 2.5rem;
-  text-align: center;
-  padding-top: 100px;
+  padding-top: 0; /* No need for extra padding at the top */
 }
 
 p {
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
   margin-bottom: 1rem;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
+  margin-top: 20px; /* Space between text and buttons */
 }
 
 button {
