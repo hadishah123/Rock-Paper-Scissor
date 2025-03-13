@@ -1,14 +1,31 @@
 body {
   background-color: #f1f1f1;
   font-family: "Arial", sans-serif;
-  margin: 0; /* Remove the top margin */
   padding: 0;
   display: flex;
+  margin-top: -5rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height of the viewport */
-  text-align: center; /* Center text */
-  position: relative; /* So the video stays in the background */
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+    url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: 1s opacity;
 }
 
 #bg-video {
