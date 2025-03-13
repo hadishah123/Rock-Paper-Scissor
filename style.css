@@ -29,34 +29,35 @@ body {
 }
 
 #bg-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100; /* Keeps the video behind the content */
-    background-size: cover;
-    transition: 1s opacity;
-    opacity: 0.5; /* Dim the video a little bit for readability */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+  transition: 1s opacity;
+  opacity: 0.5;
 }
 
 h1 {
   font-size: 2.5rem;
-  padding-top: 0; /* No need for extra padding at the top */
+  text-align: center;
+  padding-top: 100px;
 }
 
 p {
   font-size: 2rem;
   font-weight: 600;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Space between text and buttons */
 }
 
 button {
@@ -91,4 +92,62 @@ button:hover {
 
 #computer-score {
   color: #ff0000;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller heading size */
+    padding-top: 30px; /* Less padding at the top */
+  }
+
+  p {
+    font-size: 1.5rem; /* Smaller font size for the instructions */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    margin-top: 10px;
+  }
+
+  button {
+    font-size: 2.5rem; /* Smaller button size */
+    padding: 0.8rem; /* Adjust padding for smaller screens */
+    margin: 0.5rem 0; /* Add vertical margin between buttons */
+  }
+
+  #user-score, #computer-score {
+    font-size: 1.5rem; /* Adjust score size */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1.2em; /* Even smaller font size on very small screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Smaller title on very small screens */
+    padding-top: 20px;
+  }
+
+  p {
+    font-size: 1.3rem; /* Smaller text for instructions */
+  }
+
+  .buttons {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  button {
+    font-size: 2rem; /* Even smaller buttons on very small screens */
+    padding: 0.6rem;
+    margin: 0.5rem 0;
+  }
+
+  #user-score, #computer-score {
+    font-size: 1.3rem; /* Adjust score size */
+  }
 }
