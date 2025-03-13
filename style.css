@@ -1,7 +1,7 @@
 body {
   background-color: #f1f1f1;
   font-family: "Arial", sans-serif;
-  margin: 0;
+  margin-top: 10rem;
   padding: 0;
 }
 #bg-video{
@@ -18,16 +18,16 @@ body {
     opacity: .5;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   padding-top: 100px;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .buttons {
@@ -37,9 +37,9 @@ p {
 
 button {
   border: none;
-  font-size: 3rem;
-  margin: 0 0.5rem;
-  padding: 0.5rem;
+  font-size: 3.6rem;
+  margin: 0 0.9rem;
+  padding: 1rem;
   cursor: pointer;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
